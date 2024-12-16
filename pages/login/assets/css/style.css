@@ -1,0 +1,152 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #cdc6ff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.login-box {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.illustration {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    padding: 40px;
+    background-color: #cad3e9;
+    width: 300px;
+    text-align: center;
+}
+
+.form-header .logo {
+    width: 40px;
+    height: 40px;
+    background-image: url('/img/logo_bn.svg');
+    background-size: cover;
+    margin: 0 auto 20px;
+}
+
+.form-header h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.form-header p {
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #6754e8;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #6754e8;
+    font-weight: 300;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.options a {
+    color: #6f6f6f;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.login-btn, .google-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login-btn {
+    background-color: #6754e8;
+    color: #fff;
+}
+
+
+
+.signup-text {
+    margin-top: 20px;
+    color: #6754e8;
+}
+
+.signup-text a {
+    color: #000000;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-box {
+        flex-direction: column;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .form-container {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 20px;
+    }
+}
